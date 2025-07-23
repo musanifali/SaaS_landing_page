@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm install $NPM_FLAGS && next build",
+    "build": "vite build",
+    "preview": "vite preview",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "postinstall": "npm install --legacy-peer-deps"
   },
   "dependencies": {
     "clsx": "^2.1.1",
